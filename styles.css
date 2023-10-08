@@ -1,0 +1,61 @@
+/* Define a fonte principal para o corpo do texto */
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #F8F3EB; /* Cor de fundo da página */
+    color: #5C4B3F; /* Cor do texto principal */
+}
+
+/* Estiliza o cabeçalho */
+.cabecalho {
+    background-color: #3E3E3E; /* Cor de fundo do cabeçalho */
+    padding: 20px 0;
+}
+
+.cabecalho h1 {
+    font-size: 36px;
+    color: #F8F3EB; /* Cor do título do cabeçalho */
+}
+
+.cabecalho h2 {
+    font-size: 18px;
+    color: #F8F3EB; /* Cor do subtítulo do cabeçalho */
+}
+
+/* Estiliza a barra de navegação */
+.menu {
+    background-color: #3E3E3E; /* Cor de fundo do menu */
+}
+
+.menu a {
+    color: #F8F3EB; /* Cor dos links do menu */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu a:hover {
+    background-color: #5C4B3F; /* Cor de fundo dos links do menu quando hover */
+}
+
+/* Estiliza os títulos das seções */
+.secao-com-texto h2 {
+    font-size: 24px;
+    color: #5C4B3F;
+}
+
+/* Estiliza o rodapé */
+.rodape {
+    background-color: #3E3E3E; /* Cor de fundo do rodapé */
+    padding: 20px 0;
+}
+
+.rodape .logo-rodape {
+    margin-right: 20px;
+}
+
+.redes-socias img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Outras regras de estilo podem ser adicionadas conforme necessário */
