@@ -1,61 +1,137 @@
-/* Define a fonte principal para o corpo do texto */
+/* Estilo para o corpo da página */
 body {
-    font-family: 'Pacifico', cursive;
-    background-color: #F8F3EB; /* Cor de fundo da página */
-    color: #5C4B3F; /* Cor do texto principal */
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estiliza o cabeçalho */
+/* Estilo para o cabeçalho da cafeteria */
 .cabecalho {
-    background-color: #3E3E3E; /* Cor de fundo do cabeçalho */
-    padding: 20px 0;
+    background-color: #7D5338;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 .cabecalho h1 {
+    font-family: 'Pacifico', cursive;
     font-size: 36px;
-    color: #F8F3EB; /* Cor do título do cabeçalho */
 }
 
-.cabecalho h2 {
-    font-size: 18px;
-    color: #F8F3EB; /* Cor do subtítulo do cabeçalho */
+/* Estilo para o menu de navegação */
+.navegacao {
+    background-color: #5d4433;
+    padding: 10px;
 }
 
-/* Estiliza a barra de navegação */
 .menu {
-    background-color: #3E3E3E; /* Cor de fundo do menu */
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
 }
 
 .menu a {
-    color: #F8F3EB; /* Cor dos links do menu */
     text-decoration: none;
-    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
 .menu a:hover {
-    background-color: #5C4B3F; /* Cor de fundo dos links do menu quando hover */
+    color: #7D5338;
 }
 
-/* Estiliza os títulos das seções */
-.secao-com-texto h2 {
+/* Estilo para o conteúdo principal */
+.painel {
+    background-image: url("_imagem/painel-bg.jpg");
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.frase-painel {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #fff;
     font-size: 24px;
-    color: #5C4B3F;
 }
 
-/* Estiliza o rodapé */
+/* Estilo para as seções de texto */
+.secao-com-texto {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.secao-com-texto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #7D5338;
+}
+
+.secao-com-texto p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Estilo para os botões de comprar */
+.comprar {
+    background-color: #7D5338;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comprar:hover {
+    background-color: #5d4433;
+}
+
+/* Estilo para o rodapé da página */
 .rodape {
-    background-color: #3E3E3E; /* Cor de fundo do rodapé */
-    padding: 20px 0;
+    background-color: #5d4433;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
-.rodape .logo-rodape {
-    margin-right: 20px;
+.logo-rodape img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
 }
 
-.redes-socias img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+.redes-sociais {
+    margin-top: 20px;
 }
 
-/* Outras regras de estilo podem ser adicionadas conforme necessário */
+.redes-sociais a {
+    margin: 0 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes-sociais a i {
+    font-size: 36px;
+    transition: transform 0.3s;
+}
+
+.redes-sociais a:hover i {
+    transform: scale(1.2);
+}
