@@ -1,154 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
-    <title>Cafeteria Gourmet</title>
-
+    <title>Login - Cafeteria Gourmet</title>
     <link rel="stylesheet" href="_css/style.css">
-	<link rel="stylesheet" href="_reset/reset.css>
-	<link rel="stylesheet" href="_responsive/resposive.css>
-	
-	<style>
-		h1 {
+    <link rel="stylesheet" href="_reset/reset.css">
+    <link rel="stylesheet" href="_responsive/responsive.css">
+    <style>
+        h1 {
             font-family: 'Pacifico', cursive;
             font-size: 36px;
             color: white;
-		}
-	</style>
-	
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #fff;
+            margin-top: 20px;
+        }
+
+        .login-form {
+            text-align: left;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background: #0056b3;
+        }
+
+        .observacao {
+            text-align: center;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .registro-button {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
 <body>
-    <header class="cabecalho">
-	<hgroup>
-       
-          <img src="_imagem/1.jpg" alt="logo" width="400" height="200"/>
-		  <img src="_imagem/4.jpg" alt="logo" width="400" height="200"/>
-		  <img src="_imagem/3.jpg" alt="logo" width="400" height="200"/>
-		  <div style="text-align: center;">
-				<h1>GOURMET CASTRO</h1>
-				<h2>"Desperte seus sentidos, uma xícara de história a cada café"</h2>
-			</div>
-			
-        </hgroup>
+    <!-- Tela de Login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+        <div class="observacao">
+            Para comprar nossos produtos, é necessário fazer o login ou registro.
+        </div>
+        <div class="registro-button">
+            <a href="pagina-de-registro.html"><button>Registro</button></a>
+        </div>
+    </div>
 
+    <header class="cabecalho">
+        <hgroup>
+            <img src="_imagem/1.jpg" alt="logo" width="400" height="200"/>
+            <img src "_imagem/4.jpg" alt="logo" width="400" height="200"/>
+            <img src="_imagem/3.jpg" alt="logo" width="400" height="200"/>
+            <div style="text-align: center;">
+                <h1>GOURMET CASTRO</h1>
+                <h2>"Desperte seus sentidos, uma xícara de história a cada café"</h2>
+            </div>
+        </hgroup>
         <nav class="navegacao">
             <ul class="menu">
-				<li>
-					<a href="#inicio">Inicio</a>
-			</li>
-				<li>
-					<a href="#cardapio">Cardápio</a>
-			</li>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                    <a href="#cardapio">Cardápio</a>
+                </li>
                 <li>
                     <a href="#quem-somos">Quem Somos</a>
-             </li>
-
+                </li>
                 <li>
                     <a href="#onde-estamos">Onde Estamos</a>
-             </li>
-
+                </li>
                 <li>
                     <a href="#contato">Contato</a>
-             </li>
+                </li>
             </ul>
         </nav>
     </header>
-	
-       <section class="painel">
-            <div class="frase-painel">
+
+    <section class="painel">
+        <div class="frase-painel"></div>
+    </section>
+
+    <section class="secao-com-texto" id="inicio">
+        <div>
+            <h2>INICIO</h2>
+            <p>Bem-vindo à Cafeteria Gourmet Castro, onde a paixão pelo café encontra o sabor da excelência. Descubra a magia do café em nosso espaço acolhedor e desfrute de momentos especiais.</p>
+        </div>
+    </section>
+
+       <main>
+        <section id="imagem-de-destaque">
+            <img src="_imagem/p.jpeg" alt="Cafeteria Gourmet Castro" width="300" height="300"/>
+        </section>
+        <section id="imagem-de-destaque">
+            <img src="_imagem/cafe.jpeg" alt="Cafeteria Gourmet Castro" width="300" height="300"/>
+        </section>
+        <section id="imagem-de-destaque">
+            <img src="_imagem/cafe1.jpeg" alt="Cafeteria Gourmet Castro" width="300" height="300"/>
+        </section>
+
+        <section class="secao-com-texto" id="cardapio">
+            <div class="item">
+                <h2>Café Espresso</h2>
+                <p>Um espresso curto e encorpado.</p>
+                <p class="preco">R$ 5,00</p>
+                <img src="_imagem/expresso.jpeg" alt="cardapio" width="200" height="200"/>
+                <button class="comprar" data-product="Café Espresso" data-price="5.00">Comprar</button>
+            </div>
+            <div class="item">
+                <h2>Cappuccino</h2>
+                <p>Café com espuma de leite e canela.</p>
+                <p class="preco">R$ 7,00</p>
+                <img src="_imagem/cap.jpeg" alt="item" width="200" height="200"/>
+                <button class="comprar" data-product="Cappuccino" data-price="7.00">Comprar</button>
+            </div>
+            <div class="item">
+                <h2>Latte Macchiato</h2>
+                <p>Café com leite vaporizado e um toque de baunilha.</p>
+                <p class="preco">R$ 8,00</p>
+                <img src="_imagem/can.jpeg" alt="item" width="200" height="200"/>
+                <button class="comprar" data-product="Latte Macchiato" data-price="8.00">Comprar</button>
+            </div>
+            <div class="item">
+                <h2>Chocolate Quente</h2>
+                <p>Chocolate quente cremoso.</p>
+                <p class="preco">R$ 6,00</p>
+                <img src="_imagem/ch.jpeg" alt="item" width="200" height="200"/>
+                <button class="comprar" data-product="Chocolate Quente" data-price="6.00">Comprar</button>
             </div>
         </section>
-		
-		<section class="secao-com-texto" id="inicio">
-				<div>
-				<h2>INICIO</h2>
-				<p>Bem-vindo à Cafeteria Gourmet Castro, onde a paixão pelo café encontra o sabor da excelência. Descubra a magia do café em nosso espaço acolhedor e desfrute de momentos especiais.</p>
-				</div>
-				</section>
-				  <main>
-		<section id="imagem-de-destaque">
-			<img src="_imagem/p.jpeg" alt="Cafeteria Gourmet Castro" width="300" height="300/>
-		 </section>
-		 <section id="imagem-de-destaque">
-			<img src="_imagem/cafe.jpeg" alt="Cafeteria Gourmet Castro" width="300" height="300/>
-		</section>
-		<section id="imagem-de-destaque">
-			<img src="_imagem/cafe1.jpeg" alt="Cafeteria Gourmet Castro" width="300" height="300/>
-		</section>
-		
-		<section class="secao-com-texto" id ="cardapio">
-				<div>
-				<h2>CARDÁPIO</h2>
-				<h3>Café Espresso</h3>
-				<p>Um espresso curto e encorpado.</p>
-				<p class="preco">R$ 5,00</p>
-				<img src="_imagem/expresso.jpeg" alt="cardapio"width="200"height="200"/>
-				</div>
-				
-				<div class="item">
-            <h2>Cappuccino</h2>
-            <p>Café com espuma de leite e canela.</p>
-            <p class="preco">R$ 7,00</p>
-			<img src="_imagem/cap.jpeg" alt="item"width="200"height="200"/>
-        </div>
 
-		<div class="item">
-            <h2>Latte Macchiato</h2>
-            <p>Café com leite vaporizado e um toque de baunilha.</p>
-            <p class="preco">R$ 8,00</p>
-			<img src="_imagem/can.jpeg" alt="item"width="200"height="200"/>
-        </div>
-		
-		<div class="item">
-            <h2>Chocolate Quente</h2>
-            <p>Chocolate quente cremoso.</p>
-            <p class="preco">R$ 6,00</p>
-			<img src="_imagem/ch.jpeg" alt="item"width="200"height="200"/>
-        </div>
-		
         <section class="secao-com-texto" id="quem-somos">
-				<div>
+            <div>
                 <h2>QUEM SOMOS</h2>
-                <p>
-                   Somos a Cafeteria Gourmet Castro, uma empresa apaixonada por café e comprometida em proporcionar aos nossos clientes uma experiência gastronômica única e reconfortante. Fundada em 2009 por Fernanda Castro e seu marido João Castro, somos uma cafeteria gourmet que nasceu do amor pelo café de alta qualidade e pela busca incessante por produtos excepcionais relacionados ao café.
-                </p>
+                <p>Somos a Cafeteria Gourmet Castro, uma empresa apaixonada por café e comprometida em proporcionar aos nossos clientes uma experiência gastronômica única e reconfortante. Fundada em 2009 por Fernanda Castro e seu marido João Castro, somos uma cafeteria gourmet que nasceu do amor pelo café de alta qualidade e pela busca incessante por produtos excepcionais relacionados ao café.</p>
             </div>
         </section>
-		<img src="_imagem/castro.jpeg" alt="quem-somos"width="200"height="200"/>
-
+        <img src="_imagem/castro.jpeg" alt="quem-somos" width="200" height="200"/>
 
         <section class="secao-com-texto" id="onde-estamos">
-
             <div>
                 <h2>ONDE ESTAMOS</h2>
                 <p>
                     Avenida Joaquim Dias De Santana, 375<br>
-                    Teresina - PI 
-					CEP- 64017-690
+                    Teresina - PI
+                    CEP- 64017-690
                 </p>
             </div>
-
         </section>
 
         <section class="contato" id="contato">
-
             <div>
                 <address>
-                    <h2>Contato</h2> 
-					
-                    Telefone: (51) 9-995296603 </br>
+                    <h2>Contato</h2>
+                    Telefone: (51) 9-995296603 <br>
                     Email: contato@cafegourmet.com.br <br>
                     Horário de atendimento: seg a sex - 9h até 18h
                 </address>
             </div>
-
         </section>
-
     </main>
 
     <footer class="rodape">
@@ -156,23 +216,19 @@
             <img src="_imagem/logo.jpeg" alt="logo" width="80" height="80"/>
         </a>
 
-        <div class="redes-socias">
-
+        <div class="redes-sociais">
             <a href="#" target="_blank">
                 <img src="_imagem/face.png" alt="logo-facebook" title="logo facebook" class="facebook">
             </a>
-
             <a href="#" target="_blank">
                 <img src="_imagem/insta.png" alt="logo-instagram" title="logo instagram" class="instagram">
             </a>
-
         </div>
 
         <div class="copyright">
             © 2023 Café Gourmet
         </div>
-
     </footer>
 </body>
-
 </html>
+
